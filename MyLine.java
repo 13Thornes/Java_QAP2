@@ -1,3 +1,7 @@
+// Project: Java QAP2
+// Author: Samantha Thorne
+// Date: May 25 2024
+
 public class MyLine {
 
     // Initialize variables
