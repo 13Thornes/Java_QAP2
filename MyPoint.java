@@ -1,6 +1,6 @@
 // Project: Java QAP2
 // Author: Samantha Thorne
-// Date: May 25 2024
+// Date: May 25-28 2024
 
 public class MyPoint {
     // initialize variables

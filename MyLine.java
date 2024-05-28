@@ -1,6 +1,8 @@
 // Project: Java QAP2
 // Author: Samantha Thorne
-// Date: May 25 2024
+// Date: May 25-28 2024
+
+import java.util.Arrays;
 
 public class MyLine {
 
@@ -37,13 +39,12 @@ public class MyLine {
         return this.begin.getY();
     }
 
-    // Don't know how to get ints to return, come back
-    // public int GetBeginXY() {
-    //     int x = this.begin.getX();
-    //     int y = this.begin.getY();
+    public int[] GetBeginXY() {
+        int [] intArray = new int[] {this.begin.getX(), this.begin.getY()};
+        System.out.println(Arrays.toString(intArray));
+        return intArray;
         
-    //     return(xy);
-    // }
+    }
 
     public MyPoint GetEnd() {
         return this.end;
@@ -57,13 +58,12 @@ public class MyLine {
         return this.end.getY();
     }
 
-    // Don't know how to get ints to return, come back
-    // public int GetEndXY() {
-    //     int x = this.end.getX();
-    //     int y = this.end.getY();
+    public int[] GetEndXY() {
+        int [] intArray = new int[] {this.end.getX(), this.end.getY()};
+        System.out.println(Arrays.toString(intArray));
+        return intArray;
         
-    //     return(xy);
-    // }
+    }
 
     public double GetLength() {
         double d = this.begin.distance(end);

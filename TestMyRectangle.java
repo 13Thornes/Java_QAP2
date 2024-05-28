@@ -1,6 +1,6 @@
 // Project: Java QAP2
 // Author: Samantha Thorne
-// Date: May 25 2024
+// Date: May 25-28 2024
 
 public class TestMyRectangle {
     public static void main(String[] args) {
@@ -24,7 +24,7 @@ public class TestMyRectangle {
 
         System.out.printf("PointA y: %s \n",r1.getPointAY());
 
-        // System.out.println(r1.getPointAXY());
+        r1.getPointAXY();
 
         // Get PointB
 

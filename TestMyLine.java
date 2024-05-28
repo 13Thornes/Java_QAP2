@@ -1,6 +1,6 @@
 // Project: Java QAP2
 // Author: Samantha Thorne
-// Date: May 25 2024
+// Date: May 25-28 2024
 
 public class TestMyLine {
     public static void main(String[] args) {
@@ -20,7 +20,7 @@ public class TestMyLine {
 
         System.out.println(l1.GetBeginY());
 
-        // System.out.println(l1.GetBeginXY());
+        l1.GetBeginXY();
 
         System.out.println(l1.GetEnd());
 
@@ -28,14 +28,14 @@ public class TestMyLine {
 
         System.out.println(l1.GetEndY());
 
-        // System.out.println(l1.GetEndXY());
+        l1.GetEndXY();
 
 
         // Test sets
 
-        l1.SetBeginXY(3,4);
+        l1.SetBeginXY(1,4);
 
-        l1.SetEndXY(5,6);
+        l1.SetEndXY(3,4);
 
 
         // Test Length

@@ -1,6 +1,8 @@
 // Project: Java QAP2
 // Author: Samantha Thorne
-// Date: May 25 2024
+// Date: May 25-28 2024
+
+import java.util.Arrays;
 
 public class MyRectangle {
     
@@ -71,13 +73,12 @@ public class MyRectangle {
         return this.pointA.y;
     }
 
-    // Don't know how to return XY
-
-    // public int getPointAXY() {
-    //     int x = this.pointA.x;
-    //     int y = this.pointA.y;
-    //     return("(" + this.pointA.x + "," + this.pointA.y + ")");
-    // }
+    public int[] getPointAXY() {
+        int [] intArray = new int[] {this.pointA.getX(), this.pointA.getY()};
+        System.out.println(Arrays.toString(intArray));
+        return intArray;
+        
+    }
 
     // Point A set
     
@@ -114,13 +115,12 @@ public class MyRectangle {
         return this.pointB.y;
     }
 
-    // Don't know how to return XY
-
-    // public int getPointBXY() {
-    //     int x = this.pointB.x;
-    //     int y = this.pointB.y;
-    //     return("(" + this.pointB.x + "," + this.pointB.y + ")");
-    // }
+    public int[] getPointBXY() {
+        int [] intArray = new int[] {this.pointB.getX(), this.pointB.getY()};
+        System.out.println(Arrays.toString(intArray));
+        return intArray;
+        
+    }
 
     // Point B set
 
@@ -159,13 +159,12 @@ public class MyRectangle {
         return this.pointC.y;
     }
 
-    // Don't know how to return XY
-
-    // public int getPointCXY() {
-    //     int x = this.pointC.x;
-    //     int y = this.pointC.y;
-    //     return("(" + this.pointC.x + "," + this.pointC.y + ")");
-    // }
+    public int[] getPointCXY() {
+        int [] intArray = new int[] {this.pointC.getX(), this.pointC.getY()};
+        System.out.println(Arrays.toString(intArray));
+        return intArray;
+        
+    }
 
     // Point C set
     
@@ -203,13 +202,12 @@ public class MyRectangle {
         return this.pointD.y;
     }
 
-    // Don't know how to return XY
-
-    // public int getPointDXY() {
-    //     int x = this.pointD.x;
-    //     int y = this.pointD.y;
-    //     return("(" + this.pointD.x + "," + this.pointD.y + ")");
-    // }
+    public int[] getPointDXY() {
+        int [] intArray = new int[] {this.pointD.getX(), this.pointD.getY()};
+        System.out.println(Arrays.toString(intArray));
+        return intArray;
+        
+    }
 
     // Point D set
     
