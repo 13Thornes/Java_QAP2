@@ -52,16 +52,18 @@ public class CreditCard {
         double amountTotCents = (amount.dollars * 100) + amount.cents; 
         double balanceTotCents = (this.getBalance().dollars* 100) + this.getBalance().cents;
         if (balanceTotCents + amountTotCents > creditLimitTotCents) {
-            System.err.println("Amount exceeds credit limit");
+            System.err.println("Exceeds credit limit");
         } else {
         this.getBalance().add(amount);
         this.getBalance();
+        System.out.println("Charge: " + amount);
         }
     }
 
     // Make payment towards card
     public void payment(Money amount) {
         this.getBalance().subtract(amount);
+        System.out.println("Payment: " + amount);
     }
 }
 
