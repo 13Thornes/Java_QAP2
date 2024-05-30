@@ -14,8 +14,6 @@ public class CreditCardDemo {
         new Address("237J Harvey Hall","Menomonie",
         "WI" , "54751"));
         CreditCard visa = new CreditCard(owner, LIMIT);
-        visa.getCreditLimit();
-        visa.getBalance();
         System.out.println(visa.getBalance());
         System.out.println(visa.getPersonals());
         System.out.println("Balance: " + visa.getBalance().toString());
@@ -34,7 +32,6 @@ public class CreditCardDemo {
         System.out.println("Attempt to charge " + FOURTH_AMOUNT.toString());
         visa.charge(FOURTH_AMOUNT);
         System.out.println("Balance : " + visa.getBalance().toString());
-
     }
     
 }
