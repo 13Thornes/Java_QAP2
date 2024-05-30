@@ -32,6 +32,7 @@ public class Money {
         this.cents = (long)addedCents % 100;
         this.cents = Math.round(this.cents * 100)/100;
         return amount;
+            
     }
 
     public Money subtract(Money amount) {
@@ -71,7 +72,11 @@ public class Money {
 
     // toString() method
     public String toString() {
-        String money = "$" + this.dollars + "." + this.cents;
-        return money;
+        if (this.cents < 10) {
+            String moneyString = "$" + this.dollars + ".0" + this.cents;
+            return moneyString;
+        } else {
+            String moneyString = "$" + this.dollars + "." + this.cents;
+            return moneyString;
     }
-}
+} }
